@@ -1,0 +1,46 @@
+<!-- events/new.ejs -->
+
+<% layout('layout/boilerplate') %>
+<div class="row">
+  <h1 class="text-center">New Event</h1>
+  <div class="col-6 offset-3">
+    <form action="/events" method="POST" novalidate enctype="multipart/form-data">
+      <div class="mb-3">
+        <label class="form-label" for="EventName">Title</label>
+        <input class="form-control" type="text" name="EventName" id="EventName" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="EventLocation">Location</label>
+        <input class="form-control" type="text" name="EventLocation" id="EventLocation" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="EventDate">Date</label>
+        <input class="form-control" type="date" name="EventDate" id="EventDate" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="EventTime">Time</label>
+        <input class="form-control" type="time" name="EventTime" id="EventTime" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="EventDescription">Description</label>
+        <textarea class="form-control" name="EventDescription" id="EventDescription" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="EventEligibility">Eligibility</label>
+        <textarea class="form-control" name="EventEligibility" id="EventEligibility" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="EventOrganiserName">Organiser Name</label>
+        <input class="form-control" type="text" name="EventOrganiserName" id="EventOrganiserName">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="EventOrganiserEmail">Organiser Email</label>
+        <input class="form-control" type="email" name="EventOrganiserEmail" id="EventOrganiserEmail">
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-success">Create Event</button>
+      </div>
+    </form>
+    <a href="/events">All events</a>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<% layout('layout/boilerplate')%>
+<div class="card offset-3" style="width: 35rem;">
+    <img src="" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%=event.EventName %></h5>
+      <p class="card-text"><%=event.EventDescription%>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fugit amet nesciunt doloribus architecto culpa voluptatibus harum? Odit quis fugiat labore atque vitae, consectetur, corrupti corporis explicabo voluptatem, minima consequatur. </p>
+        
+        <h2>Eligibility</h2>
+        <p class="card-text"><%=event.EventEligibility%></p>
+        <p class="card-text"><%=event.Location%></p>
+        <p class="card-text"><%= event.EventOrganiserName%></p>
+
+
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
